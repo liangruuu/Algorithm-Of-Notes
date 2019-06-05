@@ -25,6 +25,7 @@ long long __merge(int arr[], int l, int mid, int r) {
     } else if (k > r) { // 如果右半部分元素已经全部处理完毕
       arr[i] = aux[j - l];
       j++;
+      
     } else if (aux[j - l] <= aux[k - l]) {
       // 左半部分所指元素 <= 右半部分所指元素
       arr[i] = aux[j - l];
